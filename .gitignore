@@ -1,0 +1,11 @@
+.venv/
+data/*
+!data/.gitkeep
+!data/README.md
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+*.iml
+/models
