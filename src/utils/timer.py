@@ -1,5 +1,6 @@
 import time
 
+
 class Timer:
     def __init__(self, label="block", verbose=False):
         self.label = label
