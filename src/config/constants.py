@@ -1,2 +1,2 @@
 RANDOM_STATE = 42
-N_JOBS = 2
+N_JOBS = 1

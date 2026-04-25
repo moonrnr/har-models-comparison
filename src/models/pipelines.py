@@ -80,7 +80,7 @@ def pipe_random_forest():
                 "clf",
                 RandomForestClassifier(
                     n_estimators=300,
-                    n_jobs=N_JOBS,
+                    n_jobs=-1,
                     random_state=RANDOM_STATE,
                 ),
             ),
