@@ -1,8 +1,10 @@
 import os
 import random
+import numpy as np
+
 from pathlib import Path
 
-import numpy as np
+from src.config.constants import RANDOM_STATE
 
 
 def find_project_root(start=Path.cwd()):
@@ -50,7 +52,6 @@ def setup():
     MODELS_DIR = ensure_dir(PROJECT_ROOT / "models")
     RESULTS_DIR = ensure_dir(PROJECT_ROOT / "results")
 
-    RANDOM_STATE = 42
     set_random_seed(RANDOM_STATE)
 
     return {
