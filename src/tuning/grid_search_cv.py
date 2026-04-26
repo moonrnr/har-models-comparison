@@ -55,8 +55,6 @@ def run_grid(
         "n_combos": n_combos,
         "n_fits": n_fits,
         "time_s": round(elapsed, 2),
-        "grid_path": str(grid_path),
-        "cv_csv_path": str(csv_path),
     }
     print(
         f"\n[{name}]\tBest MCC = {grid.best_score_:.4f}\t\t|\t\t{n_combos} kombinacji × "
