@@ -10,3 +10,7 @@ __pycache__/
 *.iml
 /models
 /results
+/node_modules
+package-lock.json
+package.json
+/google_notebooks
