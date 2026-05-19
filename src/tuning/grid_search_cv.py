@@ -19,12 +19,19 @@ def run_grid(
     scoring,
     n_jobs,
     verbose=1,
+    subdir=None,
 ):
     if not Path(models_dir).exists():
         raise FileNotFoundError(f"models_dir nie istnieje: {models_dir}")
 
     if not Path(results_dir).exists():
         raise FileNotFoundError(f"results_dir nie istnieje: {results_dir}")
+
+    if subdir:
+        models_dir = Path(models_dir) / subdir
+        results_dir = Path(results_dir) / subdir
+        models_dir.mkdir(parents=True, exist_ok=True)
+        results_dir.mkdir(parents=True, exist_ok=True)
 
     grid = GridSearchCV(
         estimator=factory(),
